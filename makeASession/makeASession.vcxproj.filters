@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="源文件\session">
+      <UniqueIdentifier>{a094f8de-c7a7-452a-84de-3392918dffc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\proto_cpp">
+      <UniqueIdentifier>{83d6bb44-d302-481b-8064-648a0cba0d80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\common">
+      <UniqueIdentifier>{561c556c-56a6-400d-879f-92d7bcd02f37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\entity">
+      <UniqueIdentifier>{3f70d8c3-66b3-4350-96a8-f457203a2f14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\component">
+      <UniqueIdentifier>{e7700507-981b-475c-aef5-afa68493d804}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\config">
+      <UniqueIdentifier>{d6867d9a-c46e-4044-b1f3-1b09f436c865}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\db">
+      <UniqueIdentifier>{c1b74625-3ad4-4db3-bea0-05681ccf9d80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\dispatch">
+      <UniqueIdentifier>{5ee2d0fc-fa6b-4b37-95f6-6807673ca68b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\helper">
+      <UniqueIdentifier>{b5b2a8c6-6be8-4038-8f3d-fb7ea0b5054c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\manager">
+      <UniqueIdentifier>{ce9bbf6d-2bbf-41fd-8c4b-967af04aebca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\module">
+      <UniqueIdentifier>{367146e4-ae53-48d7-aaa8-ed6f7161a374}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\common\common.h">
+      <Filter>源文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\session\session.h">
+      <Filter>源文件\session</Filter>
+    </ClInclude>
+    <ClInclude Include="..\entity\PlayerEntity.h">
+      <Filter>源文件\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\component\permissionComponent.h">
+      <Filter>源文件\component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dispatch\dispatch.h">
+      <Filter>源文件\dispatch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dispatch\dispatchMgr.h">
+      <Filter>源文件\dispatch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\helper\AccoutHelper.h">
+      <Filter>源文件\helper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\db\db_UserInfoManager.h">
+      <Filter>源文件\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\db\dbbaseManager.h">
+      <Filter>源文件\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\helper\dbHelper.h">
+      <Filter>源文件\helper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\proto_cpp\db.pb.h">
+      <Filter>源文件\proto_cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\proto_head_common.h">
+      <Filter>源文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\manager\CInviteKeyManager.h">
+      <Filter>源文件\manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\helper\playerHelper.h">
+      <Filter>源文件\helper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\manager\playerEntityManager.h">
+      <Filter>源文件\manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\module\playerModule.h">
+      <Filter>源文件\module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\module\userInfoModule.h">
+      <Filter>源文件\module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\manager\timerManager.h">
+      <Filter>源文件\manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AppCenter.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\commonHelper.h">
+      <Filter>源文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\base_session.h">
+      <Filter>源文件\common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\session\session.cpp">
+      <Filter>源文件\session</Filter>
+    </ClCompile>
+    <ClCompile Include="..\entity\PlayerEntity.cpp">
+      <Filter>源文件\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\component\permissionComponent.cpp">
+      <Filter>源文件\component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dispatch\dispatch.cpp">
+      <Filter>源文件\dispatch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dispatch\dispatchMgr.cpp">
+      <Filter>源文件\dispatch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\helper\AccoutHelper.cpp">
+      <Filter>源文件\helper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\db\db_UserInfoManager.cpp">
+      <Filter>源文件\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\db\dbbaseManager.cpp">
+      <Filter>源文件\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\helper\dbHelper.cpp">
+      <Filter>源文件\helper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\proto_cpp\db.pb.cc">
+      <Filter>源文件\proto_cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\manager\CInviteKeyManager.cpp">
+      <Filter>源文件\manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\helper\playerHelper.cpp">
+      <Filter>源文件\helper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\manager\playerEntityManager.cpp">
+      <Filter>源文件\manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\module\playerModule.cpp">
+      <Filter>源文件\module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\module\userInfoModule.cpp">
+      <Filter>源文件\module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\manager\timerManager.cpp">
+      <Filter>源文件\manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AppCenter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\commonHelper.cpp">
+      <Filter>源文件\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\base_session.cpp">
+      <Filter>源文件\common</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

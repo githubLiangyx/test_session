@@ -1,0 +1,30 @@
+syntax = "proto3";
+import "userdata.proto";
+
+enum EAccoutLevel
+{
+	Elevel0 = 0;	
+	ELevel1 = 1;
+	ELevel2 = 2;
+	ELevel3 = 3;
+	ELevel4 = 4;
+	ENormal = 5;
+	ELevel6 = 6;
+	ELevel7 = 7;
+	ELevel8 = 8;
+	ELevel9 = 9;
+};
+
+message SUserInfo
+{
+	int32 userID = 1;
+	string userName = 2;
+	string passWord = 3;
+	ESex sex = 4;	
+	string bornYMD = 5;
+	string registDt = 6;
+	string lastLoginOutDt = 7;
+	bool onLine = 8;
+	EAccoutLevel level = 9;
+	string addrCity = 10;
+};

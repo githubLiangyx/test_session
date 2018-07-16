@@ -1,0 +1,16 @@
+{
+	"userId":用户ID     //int
+	"userEx":服务器标识 //
+	"accout":账户名 		//string
+	"password":密码 		//string
+	"accoutName":账户昵称 //string
+	"email":邮箱        //string
+	"phoneNum":电话号码 //string
+	"userType":用户类型 //int  EUserType 用户类型可能拓展权限
+	"registerTime":注册时间    //string 2018-1-1 01:01:01
+	"registerAddr":注册地址    //string 移动端填手机系统识别码  PC端填写mac地址
+	"openDeviceLock":是否开启设备锁 //bool
+	"onLine":是否在线 			   //bool
+	"lastLoginOutTime":上次离线时间 //string 2018-1-1 01:01:01
+	"selfInviteKey":专属邀请码   //string
+}

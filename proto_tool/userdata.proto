@@ -1,0 +1,122 @@
+syntax = "proto3";
+
+enum ECMDType
+{
+	ECMDDefault = 0;
+	ECMDLogin = 1;
+};
+
+enum EMsgType
+{
+	EMsgDefault = 0;
+	EMsgCMD = 1;
+	EMsgRPC = 2;
+	EMsgCATBEGIN = 0x10000000;
+	EMsgCAT = 0x20000000;
+	EMsgCATEND = 0x40000000;
+};
+
+enum ECltErrorCode
+{
+	ECltErrDefault = 0;
+	ECltErrPackOutRange = 1;
+	ECltErrUnkonCmd = 2;
+	ECltErrPackNotFound = 3;
+	ECltErrSerializeErr = 4;
+};
+
+message MessageBlock
+{
+	uint32 type = 1;
+	ECMDType cmd_type = 2;
+	int32 pack_id = 3;
+	string msg_name = 4;
+	string content = 5;
+};
+
+message CltError
+{
+	ECltErrorCode ec = 1;
+	string what = 2;
+};
+
+enum EPlatForm
+{
+	EPlatWindow = 0;
+	EPlatMobiePhone = 1;
+	EPlatIOS = 2;
+};
+
+message UserLogin
+{
+	string user_name = 1;
+	string pass_word = 2;
+	string hard_driver_addr = 3;
+	EPlatForm plat_code = 4;
+};
+
+message UserFindPassword
+{
+	string user_name = 1;
+	string id_no = 2;
+	string phone_no = 3;
+	string hard_driver_addr = 4;	
+};
+
+enum ESex
+{
+	EMan = 0;
+	EWoman = 1;
+	EUnknowSex = 2;	
+};
+
+//就读学校
+enum ESchool
+{
+	EUnknowSchool = 0;	//未知
+	EGXCJ = 1;		//广西财经
+	EGXDX = 2;		//广西大学
+	EGXYKD = 3;		//广西医科大
+};
+
+//专业
+enum EMajor
+{
+	EUnknowMajor = 0;
+	EComputer = 1;	//计算机
+	EFinance = 2;	//金融
+	EAccount = 3;	//会计
+	EEnglish = 4;	//英语
+};
+
+enum EDegree
+{
+	EUnknowDegree = 0;	//未知
+	ESeniorMiddle = 1;	//高中
+	EVocational = 2;	//中专
+	EJuniorColleges = 3;//大专
+	EUndergraduate = 4; //本科
+	EMaster = 5;		//硕士
+	EDoctor = 6;		//博士
+	EPostdocs = 7;		//博士后
+};
+
+//被查找权限
+enum EBeFindPermissions
+{
+	EAll = 0;				//所有人可见
+	ESameSchool = 1;		//同一个学校
+	ESameMajor  = 2;		//同一个专业
+	ESameadmissionYear  = 4;		//同一届
+	ENone = 0x40000000;		//所有人不可见
+};
+
+message UserRegister
+{
+	string userName = 1;		//登陆帐户名
+	string passWord = 2;		//登陆密码
+	string userPhone = 3;		//电话
+	ESex sex = 4;				//性别
+	string bornYMD = 5;			
+	string addrCity = 6;			
+};
